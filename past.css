@@ -122,8 +122,8 @@
 }
 
 .item-four img{
-    height: 15rem;
-    width: 15rem;
+    height: auto;
+    width: 20%;
     margin: auto;
     opacity: 0;
 
@@ -204,8 +204,8 @@
         margin: auto;
     }
     .past-images img{
-        height: 20rem;
-        width: 20rem;
+        height: auto;
+        width: 100%;
     }
     .timeskip-container a li{
         font-size: 1.7rem;
