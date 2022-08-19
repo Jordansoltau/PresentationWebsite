@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+.timeskip-container{
+    height: 12vh;
+    width: 100%;
+    background-image: linear-gradient(to left, #bdc8dc, #5089c9);
+
+
+}
+
+.timeskip-container ul{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 3rem;
+
+}
+
+.timeskip-container a{
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeskip-container a li{
+    height: auto;
+
+
+}
+
+.timeskip-container li:hover{
+    color: lightslategrey;
+    cursor: pointer;
+}
+
+.website-container{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/backgroundsite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.website-title{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: oblique;
+
+}
+.website-quote{
+    height: auto;
+    width: auto;
+    font-style: oblique;
+    padding: 3%;
+}
+.website-quote p{
+    padding-left: 40%;
+    text-decoration: underline;
+}
+
+.main-container{
+    height: 60%;
+    width: 90%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    grid-template-areas:
+    "intro "
+
+;
+
+}
+
+.item-one{
+    grid-area: intro;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+
+}
+.item-one ol {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255, 0);
+}
+.item-one ol li {
+    padding-left: 4%;
+
+}
+.item-one:hover {
+    color: rgb(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+
+.item-one ol:hover {
+    color: rgb(0, 0, 0, 1);
+
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 900px){
+    .item-one{
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .timeskip-container a li{
+        font-size: 1.7rem;
+
+
+    }
+}

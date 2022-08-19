@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+.timeskip-container{
+    height: 12vh;
+    width: 100%;
+    background-image: linear-gradient(to left, #bdc8dc, #5089c9);
+
+
+}
+
+.timeskip-container ul{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 3rem;
+
+}
+
+.timeskip-container a{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeskip-container a li{
+    height: auto;
+    color: black;
+
+}
+
+.timeskip-container li:hover{
+    color: lightslategrey;
+    cursor: pointer;
+}
+
+
+.website-container{
+    height: auto;
+    width: 100%;
+     background-image: url("images/backgroundsite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.website-title{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: oblique;
+
+}
+.website-quote{
+    height: auto;
+    width: auto;
+    font-style: oblique;
+    padding: 3%;
+}
+.website-quote p{
+    padding-left: 40%;
+    text-decoration: underline;
+}
+
+.main-container{
+    height: auto;
+    width: 90%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "intro  interests"
+    "intro mindset"
+    "hobby photo"
+;
+
+}
+
+.item-one{
+    grid-area: intro;
+
+
+}
+
+
+
+
+
+
+.item-two{
+    grid-area: hobby;
+
+
+}
+
+.item-three{
+    grid-area: interests;
+
+}
+
+.item-four{
+    grid-area: mindset;
+}
+.item-five{
+    grid-area: photo;
+    height: 100%;
+    display: inline-block;
+
+}
+
+.item-five img{
+    height: 10rem;
+    width: 10rem;
+    opacity: 0;
+    margin-left: 20%;
+}
+
+.item-one ul,.item-two ul,.item-three ul,.item-four ul,.item-five ul{
+    height: 100%;
+    list-style: none;
+    display:flex ;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    color: rgb(255,255,255,0);
+
+    padding-left: 3%;
+    transition: 1s ease-out 100ms;
+}
+
+.item-one ul h2,.item-two ul h2,.item-three ul h2,.item-four ul h2,.item-five ul h2{
+    text-align: center;
+}
+.item-one ul:hover{
+    color: rgb(0, 0, 0,1);
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 20px;
+
+}
+.item-two ul:hover{
+    color: rgb(0, 0, 0,1);
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+
+.item-three ul:hover{
+    color: rgb(0, 0, 0,1);
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.item-four ul:hover{
+    color: rgb(0, 0, 0,1);
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.item-five ul:hover{
+    color: rgb(0, 0, 0,1);
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.item-five ul img:hover{
+   opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-container{
+        height: auto;
+        width: 90%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    "intro "
+    "interests "
+    "mindset"
+    "hobby"
+    "photo"
+    ;
+
+    }
+
+    .timeskip-container a li{
+        font-size: 1.7rem;
+
+
+    }
+}
